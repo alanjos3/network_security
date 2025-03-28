@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Network-security-project
+Version: 0.0.1
+Summary: A Network security project
+Author: Alan Jose
+Author-email: alanunni3@gmail.com
+Requires-Dist: python-dotenv
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pymango
+Requires-Dist: certifi
