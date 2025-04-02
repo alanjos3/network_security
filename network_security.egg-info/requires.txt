@@ -1,5 +1,6 @@
 python-dotenv
+ipykernel
 pandas
 numpy
-pymango
 certifi
+pymongo[srv]<5.0,>=4.1

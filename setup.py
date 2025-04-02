@@ -14,7 +14,7 @@ def get_requirements(file_path:str)->list:
     return requirements
     
 setup(
-    name="Network-security-project",
+    name="network_security",
     version="0.0.1",
     author='Alan Jose',
     author_email='alanunni3@gmail.com',

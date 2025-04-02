@@ -1,11 +1,12 @@
 Metadata-Version: 2.1
-Name: Network-security-project
+Name: network_security
 Version: 0.0.1
 Summary: A Network security project
 Author: Alan Jose
 Author-email: alanunni3@gmail.com
 Requires-Dist: python-dotenv
+Requires-Dist: ipykernel
 Requires-Dist: pandas
 Requires-Dist: numpy
-Requires-Dist: pymango
 Requires-Dist: certifi
+Requires-Dist: pymongo[srv]<5.0,>=4.1

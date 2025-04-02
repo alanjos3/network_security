@@ -1,7 +1,8 @@
 python-dotenv
+ipykernel
 pandas
 numpy
-pymango
 certifi
-
+pymongo[srv]>=4.1,<5.0
+scikit-learn
 # -e .
