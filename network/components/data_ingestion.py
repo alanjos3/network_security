@@ -35,7 +35,8 @@ class DataIngestion:
             
             df = pd.DataFrame(list(self.collection.find()))
             if "_id" in df.columns.to_list():
-                df.drop(columns=["_id"],axis=1)
+                df = df.drop(columns=["_id"],axis=1)
+                
             df.replace({"na":np.nan},inplace=True)
             
             logging.info(f"Exported collection: {collection_name} from database: {database_name} to dataframe")
