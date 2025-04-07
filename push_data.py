@@ -35,7 +35,7 @@ class Extract:
             
         except Exception as e:
             raise CustomException(e, sys)
-    
+        
     def insert_to_mongodb(self,records,database,collection):
         try:
             self.records = records

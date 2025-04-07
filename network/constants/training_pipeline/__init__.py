@@ -10,6 +10,7 @@ FILE_NAME:str = "phishingData.csv"
 
 TRAIN_FILE_NAME:str = "train.csv"
 TEST_FILE_NAME:str = "test.csv"
+SAVED_MODEL_DIR =os.path.join("saved_models")
 
 # Data Ingestion related Constansts
 DATA_INGESTION_COLLECTION_NAME:str = "NetworkData"
@@ -45,3 +46,10 @@ DATA_TRANSFORMATION_TRAIN_FILE_PATH: str = "train.npy"
 
 DATA_TRANSFORMATION_TEST_FILE_PATH: str = "test.npy"
 
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
+MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
+MODEL_TRAINER_OVER_FIITING_UNDER_FITTING_THRESHOLD: float = 0.05
+MODEL_FILE_NAME = "model.pkl"
+
+TRAINING_BUCKET_NAME = "netwworksecurity"
