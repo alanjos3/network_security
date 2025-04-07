@@ -1,0 +1,22 @@
+[2025-04-07 23:09:46,297] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:09:46,302] 107 INFO : Accessing as alanjos3
+[2025-04-07 23:09:46,831] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-07 23:09:47,373] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:09:47,376] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-07 23:09:47,377] 107 INFO : Repository alanjos3/network_security initialized!
+[2025-04-07 23:09:47,378] 80 INFO : Loading preprocessor from: /home/alanjose/Network/final_model/preprocessor.pkl
+[2025-04-07 23:09:47,380] 82 INFO : Loading model from: /home/alanjose/Network/final_model/model.pkl
+[2025-04-07 23:09:47,408] 86 INFO : Preprocessor and model loaded successfully.
+[2025-04-07 23:09:47,409] 104 WARNING : SECURITY WARNING: Using default Flask secret key. Set a strong FLASK_SECRET_KEY environment variable for production.
+[2025-04-07 23:09:47,410] 369 INFO : Starting Flask application server on http://0.0.0.0:8000
+[2025-04-07 23:09:47,410] 371 WARNING : Flask is running in DEBUG MODE (FLASK_DEBUG=1). DO NOT use debug mode in a production environment.
+[2025-04-07 23:09:47,413] 97 WARNING :  * Debugger is active!
+[2025-04-07 23:09:47,428] 97 INFO :  * Debugger PIN: 222-279-454
+[2025-04-07 23:09:52,103] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-04-07 23:09:52,119] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-04-07 23:09:52,120] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-04-07 23:09:52,137] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:52] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=W9M9rUDK4mxGzl4DOzTB HTTP/1.1" 200 -
+[2025-04-07 23:09:54,702] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-04-07 23:09:54,728] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-04-07 23:09:54,729] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-04-07 23:09:54,754] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:09:54] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=W9M9rUDK4mxGzl4DOzTB HTTP/1.1[0m" 304 -

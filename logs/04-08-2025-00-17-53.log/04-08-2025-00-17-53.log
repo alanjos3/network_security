@@ -1,0 +1,60 @@
+[2025-04-08 00:17:55,804] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-08 00:17:55,808] 107 INFO : Accessing as alanjos3
+[2025-04-08 00:17:56,264] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-08 00:17:56,674] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-08 00:17:56,689] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-08 00:17:56,690] 107 INFO : Repository alanjos3/network_security initialized!
+[2025-04-08 00:18:15,249] 35 INFO : Start data Ingestion
+[2025-04-08 00:18:15,640] 34 INFO : Exporting collection: NetworkData from database: Alan to dataframe
+[2025-04-08 00:18:33,956] 42 INFO : Exported collection: NetworkData from database: Alan to dataframe
+[2025-04-08 00:18:34,016] 64 INFO : Train Test Split Completed
+[2025-04-08 00:18:34,056] 72 INFO : Train Test Split files are saved at Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested
+[2025-04-08 00:18:34,056] 38 INFO : Data Ingestion completed and artifact: DataIngestionArtifact(train_file_path='Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested/train.csv', test_file_path='Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested/test.csv')
+[2025-04-08 00:18:34,062] 48 INFO : Initiate the data Validation
+[2025-04-08 00:18:34,079] 33 INFO : Required number of columns:2
+[2025-04-08 00:18:34,079] 34 INFO : Data frame has columns:31
+[2025-04-08 00:18:34,079] 84 INFO : Number of columns in train data are same
+[2025-04-08 00:18:34,079] 33 INFO : Required number of columns:2
+[2025-04-08 00:18:34,079] 34 INFO : Data frame has columns:31
+[2025-04-08 00:18:34,079] 87 INFO : Number of columns in test data are not same
+[2025-04-08 00:18:34,203] 50 INFO : Starting data transformation
+[2025-04-08 00:18:34,230] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:18:34,233] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:18:34,233] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:18:34,237] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:18:34,237] 79 INFO : Data transformation completed
+[2025-04-08 00:20:10,612] 93 INFO : Best model found: Random Forest with accuracy: 0.8657016335170541
+[2025-04-08 00:20:10,613] 94 INFO : Train model score: ClassificationMetricArtifact(f1_score=0.9916666666666667, precision_score=0.9894544717095923, recall_score=0.9938887757180689)
+[2025-04-08 00:20:25,378] 101 INFO : Test model score: ClassificationMetricArtifact(f1_score=0.9707649179014817, precision_score=0.9703763010408326, recall_score=0.9711538461538461)
+[2025-04-08 00:20:25,381] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:20:25,382] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:20:25,382] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:20:25,504] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:20:25,505] 118 INFO : Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/2025-04-08-00-17-53/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9916666666666667, precision_score=0.9894544717095923, recall_score=0.9938887757180689), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9707649179014817, precision_score=0.9703763010408326, recall_score=0.9711538461538461))
+[2025-04-08 00:20:25,523] 35 INFO : Start data Ingestion
+[2025-04-08 00:20:25,733] 34 INFO : Exporting collection: NetworkData from database: Alan to dataframe
+[2025-04-08 00:20:40,009] 42 INFO : Exported collection: NetworkData from database: Alan to dataframe
+[2025-04-08 00:20:40,057] 64 INFO : Train Test Split Completed
+[2025-04-08 00:20:40,105] 72 INFO : Train Test Split files are saved at Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested
+[2025-04-08 00:20:40,106] 38 INFO : Data Ingestion completed and artifact: DataIngestionArtifact(train_file_path='Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested/train.csv', test_file_path='Artifacts/2025-04-08-00-17-53/Data_Ingestion/Ingested/test.csv')
+[2025-04-08 00:20:40,114] 48 INFO : Initiate the data Validation
+[2025-04-08 00:20:40,134] 33 INFO : Required number of columns:2
+[2025-04-08 00:20:40,134] 34 INFO : Data frame has columns:31
+[2025-04-08 00:20:40,134] 84 INFO : Number of columns in train data are same
+[2025-04-08 00:20:40,134] 33 INFO : Required number of columns:2
+[2025-04-08 00:20:40,134] 34 INFO : Data frame has columns:31
+[2025-04-08 00:20:40,134] 87 INFO : Number of columns in test data are not same
+[2025-04-08 00:20:40,251] 50 INFO : Starting data transformation
+[2025-04-08 00:20:40,289] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:20:40,296] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:20:40,296] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:20:40,301] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:20:40,301] 79 INFO : Data transformation completed
+[2025-04-08 00:22:45,811] 93 INFO : Best model found: Random Forest with accuracy: 0.9047360213708429
+[2025-04-08 00:22:45,811] 94 INFO : Train model score: ClassificationMetricArtifact(f1_score=0.9912937841668354, precision_score=0.9890909090909091, recall_score=0.9935064935064936)
+[2025-04-08 00:22:58,861] 101 INFO : Test model score: ClassificationMetricArtifact(f1_score=0.9789814066289411, precision_score=0.9726907630522088, recall_score=0.985353946297803)
+[2025-04-08 00:22:58,862] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:22:58,862] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:22:58,863] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-08 00:22:58,920] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-08 00:22:58,920] 118 INFO : Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/2025-04-08-00-17-53/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9912937841668354, precision_score=0.9890909090909091, recall_score=0.9935064935064936), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9789814066289411, precision_score=0.9726907630522088, recall_score=0.985353946297803))

@@ -1,0 +1,22 @@
+[2025-04-07 23:07:21,348] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:07:21,353] 107 INFO : Accessing as alanjos3
+[2025-04-07 23:07:22,067] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-07 23:07:22,676] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:07:22,677] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-07 23:07:22,678] 107 INFO : Repository alanjos3/network_security initialized!
+[2025-04-07 23:07:22,678] 56 INFO : Loading preprocessor and model...
+[2025-04-07 23:07:22,698] 61 INFO : Preprocessor and model loaded successfully.
+[2025-04-07 23:07:22,700] 75 WARNING : Using default Flask secret key. Set FLASK_SECRET_KEY environment variable for production.
+[2025-04-07 23:07:22,702] 278 INFO : Starting Flask development server on http://0.0.0.0:8000
+[2025-04-07 23:07:22,702] 280 WARNING : Flask is running in DEBUG MODE. Do NOT use debug mode in production.
+[2025-04-07 23:07:22,706] 97 WARNING :  * Debugger is active!
+[2025-04-07 23:07:22,734] 97 INFO :  * Debugger PIN: 222-279-454
+[2025-04-07 23:07:24,821] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-04-07 23:07:24,857] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-04-07 23:07:24,860] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-04-07 23:07:24,888] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:24] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0ShwsYVW7mvjTyvegoiY HTTP/1.1" 200 -
+[2025-04-07 23:07:29,569] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-04-07 23:07:29,588] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-04-07 23:07:29,589] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-04-07 23:07:29,615] 97 INFO : 127.0.0.1 - - [07/Apr/2025 23:07:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0ShwsYVW7mvjTyvegoiY HTTP/1.1[0m" 304 -
+[2025-04-07 23:09:35,838] 97 INFO :  * Detected change in '/home/alanjose/Network/app.py', reloading

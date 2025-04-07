@@ -75,6 +75,7 @@ class DataTransformation:
             
             #Save the preprocessor object
             save_object(self.data_transformation_config.transformed_object_file_path, preprocessor_obj)
+            save_object("final_model/preprocessor.pkl", preprocessor_obj)
             logging.info("Data transformation completed")
             
             data_transformation_artifact = DataTransformationArtifact(

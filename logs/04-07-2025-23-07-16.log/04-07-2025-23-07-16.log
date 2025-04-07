@@ -1,0 +1,18 @@
+[2025-04-07 23:07:17,840] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:07:17,850] 107 INFO : Accessing as alanjos3
+[2025-04-07 23:07:18,382] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-07 23:07:18,993] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 23:07:18,996] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-07 23:07:18,996] 107 INFO : Repository alanjos3/network_security initialized!
+[2025-04-07 23:07:18,997] 56 INFO : Loading preprocessor and model...
+[2025-04-07 23:07:19,017] 61 INFO : Preprocessor and model loaded successfully.
+[2025-04-07 23:07:19,019] 75 WARNING : Using default Flask secret key. Set FLASK_SECRET_KEY environment variable for production.
+[2025-04-07 23:07:19,021] 278 INFO : Starting Flask development server on http://0.0.0.0:8000
+[2025-04-07 23:07:19,022] 280 WARNING : Flask is running in DEBUG MODE. Do NOT use debug mode in production.
+[2025-04-07 23:07:19,027] 97 INFO : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.218.237:8000
+[2025-04-07 23:07:19,027] 97 INFO : [33mPress CTRL+C to quit[0m
+[2025-04-07 23:07:19,028] 97 INFO :  * Restarting with stat
+[2025-04-07 23:09:36,136] 97 INFO :  * Restarting with stat

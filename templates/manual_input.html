@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual URL Prediction</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 min-h-screen p-10">
+  <div class="max-w-xl mx-auto shadow-lg p-8 rounded-xl bg-gray-100">
+    <h2 class="text-2xl font-bold mb-6 text-center">Manual Feature Input</h2>
+
+    {% if result %}
+      <div class="mb-4 p-4 text-center font-bold rounded {{ 'bg-green-200 text-green-800' if result == 'Legitimate' else 'bg-red-200 text-red-800' }}">
+        Prediction: {{ result }}
+      </div>
+    {% endif %}
+
+    <form method="post" class="space-y-4">
+      {% for field in ["has_ip", "long_url", "has_at_symbol", "has_redirect", "is_https"] %}
+      <div>
+        <label class="block font-medium capitalize mb-1">{{ field.replace('_', ' ') }}</label>
+        <select name="{{ field }}" required class="w-full border border-gray-300 rounded px-3 py-2">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          <option value="Neutral">Neutral</option>
+        </select>
+      </div>
+      {% endfor %}
+
+      <div class="text-center">
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Predict</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

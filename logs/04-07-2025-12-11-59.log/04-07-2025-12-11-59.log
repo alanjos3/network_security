@@ -1,0 +1,34 @@
+[2025-04-07 12:12:02,763] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 12:12:02,769] 107 INFO : Accessing as alanjos3
+[2025-04-07 12:12:03,321] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-07 12:12:03,725] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-07 12:12:03,728] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-07 12:12:03,728] 107 INFO : Repository alanjos3/network_security initialized!
+[2025-04-07 12:12:03,729] 20 INFO : Initiate the data ingestion
+[2025-04-07 12:12:03,884] 34 INFO : Exporting collection: NetworkData from database: Alan to dataframe
+[2025-04-07 12:12:14,528] 42 INFO : Exported collection: NetworkData from database: Alan to dataframe
+[2025-04-07 12:12:14,566] 64 INFO : Train Test Split Completed
+[2025-04-07 12:12:14,601] 72 INFO : Train Test Split files are saved at Artifacts/2025-04-07-12-12-00/Data_Ingestion/Ingested
+[2025-04-07 12:12:14,601] 22 INFO : Data Initiation Completed
+[2025-04-07 12:12:14,606] 27 INFO : Initiate the data Validation
+[2025-04-07 12:12:14,633] 33 INFO : Required number of columns:2
+[2025-04-07 12:12:14,633] 34 INFO : Data frame has columns:31
+[2025-04-07 12:12:14,633] 84 INFO : Number of columns in train data are same
+[2025-04-07 12:12:14,633] 33 INFO : Required number of columns:2
+[2025-04-07 12:12:14,633] 34 INFO : Data frame has columns:31
+[2025-04-07 12:12:14,633] 87 INFO : Number of columns in test data are not same
+[2025-04-07 12:12:14,732] 29 INFO : data Validation Completed
+[2025-04-07 12:12:14,732] 33 INFO : data Transformation started
+[2025-04-07 12:12:14,732] 50 INFO : Starting data transformation
+[2025-04-07 12:12:14,771] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-07 12:12:14,775] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-07 12:12:14,775] 78 INFO : Data transformation completed
+[2025-04-07 12:12:14,776] 36 INFO : data Transformation completed
+[2025-04-07 12:12:14,776] 39 INFO : Model Training sstared
+[2025-04-07 12:13:24,217] 93 INFO : Best model found: Random Forest with accuracy: 0.9095630034642515
+[2025-04-07 12:13:24,217] 94 INFO : Train model score: ClassificationMetricArtifact(f1_score=0.9906370852839405, precision_score=0.9872210953346856, recall_score=0.9940767973856209)
+[2025-04-07 12:13:39,177] 101 INFO : Test model score: ClassificationMetricArtifact(f1_score=0.9806400632161201, precision_score=0.9771653543307086, recall_score=0.9841395717684377)
+[2025-04-07 12:13:39,180] 51 INFO : Entered the save_object method of MainUtils class
+[2025-04-07 12:13:39,180] 55 INFO : Exited the save_object method of MainUtils class
+[2025-04-07 12:13:39,180] 116 INFO : Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/2025-04-07-12-12-00/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9906370852839405, precision_score=0.9872210953346856, recall_score=0.9940767973856209), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9806400632161201, precision_score=0.9771653543307086, recall_score=0.9841395717684377))
+[2025-04-07 12:13:39,183] 43 INFO : Model Training artifact created
