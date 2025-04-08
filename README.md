@@ -1,28 +1,54 @@
-# 🛡️ Phishing Detection Web App
+# Phishing Detection Web Application
 
-A Flask-based web application that detects phishing websites using a trained machine learning model and handcrafted URL-based features.
-
----
-
-## 📌 Features
-
-- 🔍 **Real-Time Prediction**: Enter a URL and detect phishing in real-time using handcrafted features.
-- 📄 **CSV File Upload**: Upload a batch of URLs via a CSV file for bulk predictions.
-- 🧠 **Manual Feature Input**: Manually input 30 features for fine-grained control.
-- 🧾 **Prediction Results**: View results with prediction labels and confidence scores.
-- 📘 **API Documentation**: Swagger-style documentation for programmatic interaction.
-- 🌗 **Dark Mode**: Clean professional UI with light/dark mode support.
-- 🖱️ **Custom File Upload UI**: Aesthetic and responsive "Browse" button.
-- 📁 **Modular Architecture**: Designed with a scalable and maintainable code structure.
+A Flask-based web application designed to detect phishing websites using a trained machine learning model and a set of handcrafted URL-based features. The project is built with modularity, scalability, and usability in mind.
 
 ---
 
-## 🗂️ Project Structure
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+- [API Documentation](#api-documentation)
+- [Docker Support](#docker-support)
+- [Technologies Used](#technologies-used)
+- [Machine Learning Details](#machine-learning-details)
+- [Deployment](#deployment)
+- [Screenshots](#screenshots)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
+
+## Overview
+
+Phishing websites are deceptive platforms that trick users into revealing personal, financial, or security information by mimicking legitimate websites. With phishing attacks becoming more sophisticated and frequent, there is a growing need for automated tools that can detect these threats in real time.
+
+This project aims to address that need by offering a web-based tool that predicts whether a given URL is legitimate or malicious. It combines handcrafted feature engineering and machine learning to provide reliable predictions via a user-friendly interface.
+
+---
+
+## Features
+
+- Real-Time URL Prediction: Enter a URL to get immediate phishing detection results based on feature extraction.
+- Batch Predictions: Upload a CSV file containing multiple URLs for bulk classification.
+- Manual Feature Input: Input 30 handcrafted features manually for granular control and custom analysis.
+- Prediction Results Display: View prediction labels and associated confidence scores.
+- Interactive API Documentation: Swagger/OpenAPI support for developers to integrate the detection model.
+- Dark/Light Mode Support: User interface supports theme switching.
+- Responsive UI Components: Enhanced custom UI for uploading files and inputting data.
+- Modular Backend Architecture: Designed for ease of expansion and maintenance.
+
+---
+
+## Project Structure
 
 ```bash
 ├── app.py                   # Main Flask app
-├── main.py                  # Entry point
-├── network/                 # Core ML modules (pipeline, utils, logging, etc.)
+├── main.py                  # Entry point script
+├── network/                 # Core ML modules and pipeline
 │   ├── components/
 │   ├── constants/
 │   ├── entity/
@@ -30,108 +56,151 @@ A Flask-based web application that detects phishing websites using a trained mac
 │   ├── logging/
 │   ├── pipeline/
 │   └── utils/
-├── final_model/             # Trained model and artifacts
-├── prediction_output/       # Output predictions from CSV
-├── notebook/                # Jupyter notebooks for experimentation
-├── static/
-│   └── style.css            # Custom styles (optional)
+├── final_model/             # Trained model and related artifacts
+├── prediction_output/       # Output CSVs for batch predictions
+├── notebook/                # Jupyter notebooks for model training and exploration
+├── static/                  # Custom static files like CSS
+│   └── style.css
 ├── templates/               # HTML templates
 │   ├── index.html
 │   ├── manual_form.html
 │   ├── results.html
 │   └── table.html
-├── uploads/                 # Uploaded CSVs
-├── requirements.txt         # Python dependencies
-├── dockerfile               # Docker container setup
-└── README.md                # Project overview
-
+├── requirements.txt         # Dependency list
+├── dockerfile               # Docker configuration
+└── README.md                # Project documentation
 ```
 
+---
+
 ## Getting Started
-1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/phishing-detection-app.git
-cd phishing-detection-app
+### Step 1: Clone the Repository
 
-2️⃣ Create Virtual Environment
+```bash
+git clone https://github.com/alanjos3/network_security.git
+cd network_security
+```
 
+### Step 2: Set Up Virtual Environment
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
 
-3️⃣ Install Dependencies
+### Step 3: Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Run the App
+### Step 4: Run the Application
 
+```bash
 python app.py
+```
 
-Open your browser and go to: http://127.0.0.1:5000/
+Visit `http://127.0.0.1:5000/` in your browser.
+
+---
+
 ## How to Use
-📤 CSV Upload
 
-    Go to the home page.
+### CSV Upload
 
-    Upload a .csv file containing URLs or feature values.
+1. Navigate to the home page.
+2. Upload a `.csv` file containing URLs or corresponding features.
+3. Click on **Predict** to view the results.
 
-    Click Predict to view results.
+### Manual Feature Input
 
-🧠 Manual Feature Input
+1. Go to the **Manual Input** section.
+2. Fill in values for 30 handcrafted features (e.g., IP address usage, URL length, special symbols).
+3. Submit the form to receive a prediction and a confidence score.
 
-    Navigate to Manual Input.
+---
 
-    Input values for 30 features (e.g., IP presence, URL length).
+## API Documentation
 
-    Submit to get predictions and confidence scores(in future update)
+For interactive API documentation, visit the following endpoint once the app is running:
 
-📘 API Documentation
+```
+http://127.0.0.1:5000/docs
+```
 
-    Go to /docs for Swagger/OpenAPI documentation.
+This provides a Swagger UI interface for testing and integration.
 
-📦 Docker Support
+---
 
-To build and run using Docker:
+## Docker Support
 
+Build and run the application using Docker:
+
+```bash
 docker build -t phishing-detector .
-docker run -p -d 5000:5000 phishing-detector
+docker run -p 5000:5000 phishing-detector
+```
+
+---
 
 ## Technologies Used
 
-    Python
+- Python
+- FastAPI
+- Scikit-learn / RandomForest
+- HTML/CSS
+- Docker
 
-    Flask
+---
 
-    Scikit-learn / XGBoost (or your ML library)
+## Machine Learning Details
 
-    HTML/CSS
+This project utilizes a trained machine learning model that evaluates a range of handcrafted URL-based features, including:
 
-    TailwindCSS (via CDN)
+- Presence of IP address in the URL
+- Length of the URL
+- Use of shortening services
+- Suspicious characters or patterns (e.g., `@`, `//`, `-`)
+- ...
 
-    Docker (optional)
+The model training code is located in the `network/pipeline/` directory.
 
-🤖 Machine Learning Info
+---
 
-This app uses a trained model built on handcrafted URL-based features such as:
+## Deployment
 
-    Presence of IP address
+This application is deployed on an Amazon EC2 instance using GitHub Actions and AWS ECR for container orchestration. The automated deployment pipeline includes:
 
-    Length of URL
+ - Running unit tests on new commits to the main branch
 
-    Use of shortening services
+   -Building a Docker image and pushing it to AWS Elastic Container Registry (ECR)
 
-    Suspicious symbols or patterns
+  - Connecting to the EC2 instance 
 
-Model training code is located in the network/pipeline/ directory.
-✨ Future Improvements
+- Pulling the latest Docker image
 
-    Add OAuth login
 
-    Log user prediction history
+---
 
-    Deploy to cloud (Render/Heroku/AWS)
+## Screenshots
 
-    Add interactive feature explanation
+![Homepage](static/screenshots/homepage.png)
+![CSV Upload](static/screenshots/csv_upload.png)
+![Manual Input](static/screenshots/manual_input.png)
+![Swagger Docs](static/screenshots/swagger_docs.png)
 
-📜 License
+---
 
-MIT License © 2025 Phishing Detection Web App Team
+## Future Improvements
+
+- Display confidence scores in prediction cards
+- Enable real-time monitoring of new URLs
+- Integrate SHAP or LIME for feature-level explanation
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+
