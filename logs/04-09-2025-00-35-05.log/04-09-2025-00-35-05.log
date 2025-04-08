@@ -1,0 +1,6 @@
+[2025-04-09 00:35:06,617] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-09 00:35:06,620] 107 INFO : Accessing as alanjos3
+[2025-04-09 00:35:07,148] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/repos/alanjos3/network_security "HTTP/1.1 200 OK"
+[2025-04-09 00:35:07,746] 1025 INFO : HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-09 00:35:07,747] 107 INFO : Initialized MLflow to track repo "alanjos3/network_security"
+[2025-04-09 00:35:07,748] 107 INFO : Repository alanjos3/network_security initialized!
