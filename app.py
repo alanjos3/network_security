@@ -86,11 +86,11 @@ async def predict_route(request: Request, file: UploadFile = File(...)):
     except Exception as e:
         raise CustomException(e, sys)
     
-@app.get("/manual-input")
+@app.get("/manual_input")
 async def manual_input_form(request: Request):
     return templates.TemplateResponse("manual_input.html", {"request": request})
 
-@app.post("/manual-input")
+@app.post("/manual_predict")
 async def manual_input_predict(request: Request,
     has_ip: str = Form(...),
     long_url: str = Form(...),

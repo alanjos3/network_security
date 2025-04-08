@@ -45,7 +45,9 @@ A Flask-based web application that detects phishing websites using a trained mac
 ├── dockerfile               # Docker container setup
 └── README.md                # Project overview
 
-🚀 Getting Started
+```
+
+## Getting Started
 1️⃣ Clone the Repository
 
 git clone https://github.com/your-username/phishing-detection-app.git
@@ -65,7 +67,7 @@ pip install -r requirements.txt
 python app.py
 
 Open your browser and go to: http://127.0.0.1:5000/
-📂 How to Use
+## How to Use
 📤 CSV Upload
 
     Go to the home page.
@@ -80,7 +82,7 @@ Open your browser and go to: http://127.0.0.1:5000/
 
     Input values for 30 features (e.g., IP presence, URL length).
 
-    Submit to get predictions and confidence scores.
+    Submit to get predictions and confidence scores(in future update)
 
 📘 API Documentation
 
@@ -91,9 +93,9 @@ Open your browser and go to: http://127.0.0.1:5000/
 To build and run using Docker:
 
 docker build -t phishing-detector .
-docker run -p 5000:5000 phishing-detector
+docker run -p -d 5000:5000 phishing-detector
 
-🛠️ Technologies Used
+## Technologies Used
 
     Python
 
@@ -130,9 +132,6 @@ Model training code is located in the network/pipeline/ directory.
 
     Add interactive feature explanation
 
-🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 📜 License
 
 MIT License © 2025 Phishing Detection Web App Team

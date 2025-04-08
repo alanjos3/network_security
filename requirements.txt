@@ -10,7 +10,6 @@ mlflow
 dagshub
 fastapi
 uvicorn
-flask
 python-multipart
 
 # -e .
