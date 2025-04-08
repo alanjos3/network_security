@@ -187,6 +187,7 @@ This application is deployed on an Amazon EC2 instance using GitHub Actions and 
 
 ![Homepage](static/screenshots/homepage.png)
 ![CSV Upload](static/screenshots/csv_upload.png)
+<<<<<<< HEAD
 ![Manual Input](static/screenshots/manual_input.png)
 ![Swagger Docs](static/screenshots/swagger_docs.png)
 
@@ -204,3 +205,20 @@ This application is deployed on an Amazon EC2 instance using GitHub Actions and 
 
 This project is licensed under the MIT License.  
 
+=======
+![Swagger Docs](static/screenshots/swagger_docs.png)
+
+---
+
+## Future Improvements
+
+- Display confidence scores in prediction cards
+- Enable real-time monitoring of new URLs
+- Integrate SHAP or LIME for feature-level explanation
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+>>>>>>> 76e5479 (Readme updated)
